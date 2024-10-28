@@ -41,5 +41,9 @@ public class EmployeeService {
         }
         return null;
     }
+
+    public boolean emailExists(String email) {
+        return employeeRepository.existsByEmail(email);
+    }
 }
 
